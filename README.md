@@ -5,12 +5,15 @@ A simple perl script to inject runes in the lol client
 <br>Makes lol API requests to determine selected champion for the user then do some rune page actions
 <br>
 **How to use**
-<br>*update.pl is self explanatory (it gets the latest runes.json and version.txt)<br>
-aram.pl, injector.pl, runemap.json, runes-sr.json, habyss.json, version.txt must be in the same dir* <br>
-1. open lol client and login into your account<br>
-2. check hide preset pages (prevent current rune errors)<br>
-3. keep at least 1 custom rune page and delete all others <br>
-4. run injector.pl after confirming the champion at selection or aram.pl after joining the lobby / changing champion<br>
+<br>
+*update.pl is self explanatory (it gets the latest runes.json and version.txt)*
+<br>
+*aram.pl, injector.pl, runemap.json, runes-sr.json, habyss.json, version.txt must be in the same dir* 
+<br>
+1.open lol client and login into your account<br>
+2.check hide preset pages (prevent current rune errors)<br>
+3.keep at least 1 custom rune page and delete all others <br>
+4.run injector.pl after confirming the champion at selection or aram.pl after joining the lobby / changing champion<br>
 **Debug**
 <br>If it doesn't work try running via cmd so you can see perl output<br>
 **Any question?**
