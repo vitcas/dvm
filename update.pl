@@ -10,7 +10,7 @@ my $version = get 'https://pastebin.com/raw/qJdwthAK'; #version
 # and to refer to in an error message
 # if needed.
 my $file1 = "version.txt";
-my $file2 = "runes.json";
+my $file2 = "runessr.json";
 
 # Use the open() function to create the file.
 unless(open FILE, '>'.$file1) {

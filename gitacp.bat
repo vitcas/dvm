@@ -1,4 +1,4 @@
 cd C:\Riot Games\dvm
 git add *
-git commit -m "aram alternative"
-git push origin master
+git commit -m "fixed names"
+git push -u origin main

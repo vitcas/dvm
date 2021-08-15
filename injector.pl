@@ -12,7 +12,7 @@ my $json2 = "";
 open(FH, '<', "version.txt") or die $!;
 while(<FH>){ print "$_\n";}
 close(FH);
-open(FH, '<', "runes-sr.json") or die $!;
+open(FH, '<', "runessr.json") or die $!;
 while(<FH>){ $json = $json.$_;}
 close(FH);
 open(FH, '<', "runemap.json") or die $!;
