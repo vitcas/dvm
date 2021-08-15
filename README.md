@@ -1,6 +1,13 @@
 # devmoe
-A simple perl script to inject runes in the lol client
-<br>
+[![Badges](http://img.shields.io/:injector-pl-1744F6.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:aram-pl-1744F6.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:runessr-json-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:runesha-json-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:srift-json-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:habyss-json-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:runemap-json-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Badges](http://img.shields.io/:version-txt-53F617.svg)](https://github.com/badges/badgerbadgerbadger)
+<br>A simple perl script to inject runes in the lol client<br>
 **How it works**
 <br>Makes lol API requests to determine selected champion for the user then do some rune page actions
 <br>
