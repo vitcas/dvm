@@ -10,7 +10,7 @@ use LWP::UserAgent;
 my $json = "";
 my $json2 = "";
 
-open(FH, '<', "runesha.json") or die $!;
+open(FH, '<', "org-normal.json") or die $!;
 while(<FH>){ $json = $json.$_;}
 close(FH);
 open(FH, '<', "runemap.json") or die $!;
@@ -31,12 +31,14 @@ my $runepage  = '{"autoModifiedSelections":[],"current":false,"id":1219755005,
 "name":"mock","order":0,"primaryStyleId":8400,"selectedPerkIds":[8439,8401,8473,8242,8345,8347,5007,5002,5003],"subStyleId":8300}';
 my $xname = "mock";
 my $ram = 0;
-my $filename = 'xamps.txt';
+my $filename = 'view.html';
 #start
 open(FH, '>', $filename) or die $!;
+print FH '<!DOCTYPE html><html><head><style>img{width: 30px;}</style></head><body>';
 for my $i (0 .. $#xamps) {
     remock($xamps[$i]);
 }
+print FH '</body></html>';
 close(FH);
 print "Writing to file successfully!\n";
 #end
@@ -67,9 +69,8 @@ sub remock{
     $mock[9] = $mods[$hexa[10]];
     $mock[10] = $styles[$hexa[5]];
     $runepage = "$ram $xname"
-    ."\n".$mock[1]." / ".$mock[2]." / ".$mock[3]." / ".$mock[4]
-    ."\n".$mock[5]." / ".$mock[6]
-    ."\n".$mock[7]." / ".$mock[8]." / ".$mock[9]."\n\n"; 
+    ."\n<img src='img/".$mock[1].".png'>\n<img src='img/".$mock[2].".png'>\n<img src='img/".$mock[3].".png'>\n<img src='img/".$mock[4].".png'>\n<img src='img/".$mock[5].
+    ".png'>\n<img src='img/".$mock[6].".png'>\n<br>"; 
     print FH $runepage;
 }
 sub getriot{
@@ -78,7 +79,7 @@ sub getriot{
     my $result = 'invalid';
     while( my ( $key, $obj ) = each( @{$iter2} ) ){
         if( $key eq $param-1){
-            $result =  $obj->{'eng'};
+            $result =  $obj->{'riotid'};
         }
     }
     return $result;

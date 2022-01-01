@@ -9,7 +9,7 @@ use LWP::UserAgent;
 
 my $json = "";
 my $json2 = "";
-open(FH, '<', "runesha.json") or die $!;
+open(FH, '<', "org-normal.json") or die $!;
 while(<FH>){ $json = $json.$_;}
 close(FH);
 open(FH, '<', "runemap.json") or die $!;

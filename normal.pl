@@ -4,8 +4,7 @@ use JSON;
 use MIME::Base64;
 use LWP::UserAgent;
 
-print "injecting...\n";
-my $arcv = 'aram.json';
+my $arcv = 'normal.json';
 my $json = "";
 open(FH, '<', $arcv) or die $!;
 while(<FH>){ $json = $json.$_;}
@@ -26,9 +25,7 @@ foreach my $cat ( @{ $lobby->{'myTeam'} } ){
         last;
     }
 }  
-print "uno\n";
 my $runepage = clientget('lol-perks/v1/currentpage');
-print "dos\n";
 clientdel('lol-perks/v1/pages/');
 while( my( $idx, $elem ) = each( @{$dcdd} ) ){
     if( $elem->{'id'} eq $xamp ){
@@ -36,7 +33,6 @@ while( my( $idx, $elem ) = each( @{$dcdd} ) ){
         last;
     }
 } 
-print 'tres';
 clientset('lol-perks/v1/pages');
 
 sub true () { JSON::true }
